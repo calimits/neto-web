@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Neto — Sistema de punto de venta e inventario para Windows y Android. $100 USD, pago único." />
+  <meta name="theme-color" content="#ffffff" />
+  <title>Neto POS — El sistema de ventas para tu negocio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%2310B981'/%3E%3Ctext x='50' y='68' font-family='system-ui' font-size='58' font-weight='700' text-anchor='middle' fill='white'%3En%3C/text%3E%3C/svg%3E" />
+</head>
+<body>
+  <!-- Nav -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo" aria-label="Neto">
+        <span class="nav-logo-dot"></span>
+        neto
+      </a>
+      <div class="nav-links">
+        <a href="#ventas">Ventas</a>
+        <a href="#inventario">Inventario</a>
+        <a href="#equipo">Equipo</a>
+        <a href="#plataformas">Plataformas</a>
+        <a href="#precio">Precio</a>
+      </div>
+      <a class="nav-cta" href="https://wa.me/5354172257?text=Hola%2C%20me%20interesa%20comprar%20Neto%20POS%20%28%24100%20USD%29" target="_blank" rel="noopener">Comprar</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero">
+    <p class="hero-eyebrow">Nuevo · v1.0</p>
+    <h1 class="hero-title">neto.</h1>
+    <p class="hero-tagline">El sistema de ventas e inventario<br />hecho para tu negocio.</p>
+    <p class="hero-price"><span class="hero-trial">Prueba gratis 1 mes</span> · Desde <strong>$100 USD</strong> · Pago único, licencia de por vida.</p>
+    <div class="hero-actions">
+      <a class="link link-primary" href="https://wa.me/5354172257?text=Hola%2C%20quiero%20probar%20Neto%20POS%20gratis%20por%201%20mes" target="_blank" rel="noopener">Probar gratis 1 mes <span class="chev">›</span></a>
+      <a class="link link-secondary" href="#ventas">Conocer más <span class="chev">›</span></a>
+    </div>
+
+    <div class="hero-product" aria-hidden="true">
+      <div class="laptop">
+        <div class="laptop-screen">
+          <div class="app-bar">
+            <span class="bar-title">neto · panel de configuración</span>
+          </div>
+          <div class="app-body">
+            <aside class="app-side">
+              <div class="side-item">Inicio</div>
+              <div class="side-item">Turnos de trabajo</div>
+              <div class="side-item">Categorías</div>
+              <div class="side-item">Catálogo</div>
+              <div class="side-item">Inventario</div>
+              <div class="side-item">Caja</div>
+              <div class="side-item">Gastos</div>
+              <div class="side-item active">Empleados</div>
+              <div class="side-item">Puestos de trabajo</div>
+              <div class="side-item">Configuración</div>
+            </aside>
+            <main class="app-main">
+              <div class="dash-toolbar">
+                <div class="dash-chip primary"><span class="chip-dot"></span>Rango: Este mes</div>
+                <div class="dash-chip">Granularidad: Auto</div>
+                <div class="dash-chip">Métrica: Ganancia</div>
+                <button class="dash-export">Exportar a PDF</button>
+              </div>
+
+              <div class="dash-hero">
+                <div class="dh-text">
+                  <span class="dh-label">GANANCIA</span>
+                  <div class="dh-amount"><span class="num">2 845.6</span> <span class="code">CUP</span></div>
+                  <div class="dh-delta up">▲ 18% <span class="muted">vs ayer</span></div>
+                </div>
+                <svg class="dh-spark" viewBox="0 0 200 56" preserveAspectRatio="none">
+                  <defs>
+                    <linearGradient id="sparkg" x1="0" x2="0" y1="0" y2="1">
+                      <stop offset="0%" stop-color="#10B981" stop-opacity="0.35"/>
+                      <stop offset="100%" stop-color="#10B981" stop-opacity="0"/>
+                    </linearGradient>
+                  </defs>
+                  <path d="M0,42 L25,38 L50,40 L75,28 L100,32 L125,18 L150,24 L175,8 L200,12 L200,56 L0,56 Z" fill="url(#sparkg)"/>
+                  <path d="M0,42 L25,38 L50,40 L75,28 L100,32 L125,18 L150,24 L175,8 L200,12" stroke="#10B981" stroke-width="2" fill="none"/>
+                </svg>
+              </div>
+
+              <div class="dash-kpis">
+                <div class="dkpi kpi-success">
+                  <span class="kpi-l">Ganancia total</span>
+                  <span class="kpi-v"><span class="num">2 845.6</span> <span class="code">CUP</span></span>
+                  <span class="kpi-d up">▲ 18%</span>
+                </div>
+                <div class="dkpi kpi-danger">
+                  <span class="kpi-l">Pérdidas</span>
+                  <span class="kpi-v"><span class="num">−125</span> <span class="code">CUP</span></span>
+                  <span class="kpi-d">−3%</span>
+                </div>
+                <div class="dkpi kpi-accent">
+                  <span class="kpi-l">Gastos totales</span>
+                  <span class="kpi-v"><span class="num">420</span> <span class="code">CUP</span></span>
+                  <span class="kpi-d">+5%</span>
+                </div>
+                <div class="dkpi kpi-success">
+                  <span class="kpi-l">Total neto</span>
+                  <span class="kpi-v"><span class="num">2 720.6</span> <span class="code">CUP</span></span>
+                  <span class="kpi-d up">▲ 15%</span>
+                </div>
+              </div>
+            </main>
+          </div>
+        </div>
+        <div class="laptop-base"></div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Band: Ventas (SellScreen WhatsApp-style) -->
+  <section class="band band-light" id="ventas">
+    <div class="band-inner">
+      <p class="band-eyebrow">Punto de venta</p>
+      <h2 class="band-title">Cobrá sin fricción,<br />estilo WhatsApp.</h2>
+      <p class="band-sub">A la izquierda la lista de órdenes, a la derecha el detalle. Buscador, filtros por estado y acceso directo al catálogo. Diseñado para que cobrar sea lo más rápido del día.</p>
+      <a class="link link-primary" href="https://wa.me/5354172257?text=Hola%2C%20quiero%20saber%20m%C3%A1s%20sobre%20Neto%20POS" target="_blank" rel="noopener">Ver cómo funciona <span class="chev">›</span></a>
+
+      <div class="band-visual" aria-hidden="true">
+        <div class="sell-app">
+          <aside class="sell-side">
+            <div class="sell-search">⌕  Buscar orden…</div>
+            <div class="sell-filters">
+              <span class="filter active">Pendiente</span>
+              <span class="filter">Todos</span>
+              <span class="filter">Pagada</span>
+              <span class="filter">Cancelada</span>
+            </div>
+            <div class="sell-orders">
+              <div class="order-item active">
+                <div class="oh-row"><strong>Orden #1042</strong><span class="badge pending">Pendiente</span></div>
+                <div class="o-meta">Hoy · 14:32 · Carlos</div>
+                <div class="o-total"><span class="num">12.5</span> <span class="code">CUP</span></div>
+              </div>
+              <div class="order-item">
+                <div class="oh-row"><strong>Orden #1041</strong><span class="badge paid">Pagada</span></div>
+                <div class="o-meta">Hoy · 13:50 · Ana</div>
+                <div class="o-total"><span class="num">28</span> <span class="code">CUP</span></div>
+              </div>
+              <div class="order-item">
+                <div class="oh-row"><strong>Orden #1040</strong><span class="badge paid">Pagada</span></div>
+                <div class="o-meta">Hoy · 12:10 · Ana</div>
+                <div class="o-total"><span class="num">45</span> <span class="code">CUP</span></div>
+              </div>
+              <div class="order-item">
+                <div class="oh-row"><strong>Orden #1039</strong><span class="badge paid">Pagada</span></div>
+                <div class="o-meta">Hoy · 11:48 · Brenda</div>
+                <div class="o-total"><span class="num">18.7</span> <span class="code">CUP</span></div>
+              </div>
+            </div>
+            <button class="sell-fab" aria-label="Nueva orden">+</button>
+          </aside>
+
+          <main class="sell-detail">
+            <div class="d-head">
+              <div>
+                <h3 class="d-title">Orden #1042</h3>
+                <span class="d-meta">Creado · hace 5 min</span>
+              </div>
+              <span class="badge pending">Pendiente</span>
+            </div>
+
+            <div class="d-grid">
+              <div class="d-field">
+                <span class="d-label">Vendedor</span>
+                <span class="d-value">Carlos Méndez</span>
+              </div>
+              <div class="d-field">
+                <span class="d-label">Tipo</span>
+                <span class="d-value">A pagar</span>
+              </div>
+            </div>
+
+            <div class="d-section">
+              <span class="d-section-l">Productos</span>
+              <div class="d-products">
+                <div class="dp-row"><span class="dp-qty">2×</span><span class="dp-name">Refresco 500ml</span><span class="dp-price"><span class="num">3</span> <span class="code">CUP</span></span></div>
+                <div class="dp-row"><span class="dp-qty">1×</span><span class="dp-name">Pan de molde</span><span class="dp-price"><span class="num">3.2</span> <span class="code">CUP</span></span></div>
+                <div class="dp-row"><span class="dp-qty">1×</span><span class="dp-name">Café molido 250g</span><span class="dp-price"><span class="num">4.8</span> <span class="code">CUP</span></span></div>
+                <div class="dp-row"><span class="dp-qty">1×</span><span class="dp-name">Bolígrafo azul</span><span class="dp-price"><span class="num">0.5</span> <span class="code">CUP</span></span></div>
+              </div>
+            </div>
+
+            <div class="d-totals">
+              <div class="dt-row"><span>Total bruto</span><span><span class="num">12.5</span> <span class="code">CUP</span></span></div>
+              <div class="dt-row big"><span>Total</span><span><span class="num">12.5</span> <span class="code">CUP</span></span></div>
+            </div>
+
+            <div class="d-actions">
+              <button class="btn-app primary">Pagar</button>
+              <button class="btn-app">Cancelar</button>
+              <button class="btn-app ghost">Añadir a gastos</button>
+            </div>
+          </main>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Band: Inventario -->
+  <section class="band band-light" id="inventario">
+    <div class="band-inner">
+      <p class="band-eyebrow">Inventario</p>
+      <h2 class="band-title">Tu stock,<br />siempre exacto.</h2>
+      <p class="band-sub">Cada venta actualiza el stock al instante. Stock mínimo y máximo, costo actual, precio de venta, valor y margen — todo en una sola vista.</p>
+      <a class="link link-primary" href="https://wa.me/5354172257?text=Hola%2C%20quiero%20saber%20m%C3%A1s%20sobre%20Neto%20POS" target="_blank" rel="noopener">Ver más <span class="chev">›</span></a>
+
+      <div class="band-visual" aria-hidden="true">
+        <div class="inv-app">
+          <div class="inv-toolbar">
+            <div class="inv-search">⌕  Buscar producto…</div>
+            <div class="inv-sorts">
+              <span class="sort active">Alfabético</span>
+              <span class="sort">Ascendente</span>
+              <span class="sort">Descendente</span>
+            </div>
+          </div>
+          <table class="inv-table">
+            <thead>
+              <tr>
+                <th class="th-product">Producto</th>
+                <th>Stock</th>
+                <th>Reserv.</th>
+                <th>Mín</th>
+                <th>Máx</th>
+                <th>Costo</th>
+                <th>Precio</th>
+                <th>Valor stock</th>
+                <th>Margen</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="td-product" data-label="Producto">
+                  <div class="prod-cell">
+                    <span class="prod-avatar">📦</span>
+                    <div>
+                      <strong>Refresco 500ml</strong>
+                      <small>Bebidas · Unidad</small>
+                    </div>
+                  </div>
+                </td>
+                <td data-label="Stock"><span class="num">124</span></td>
+                <td data-label="Reserv."><span class="num muted">0</span></td>
+                <td data-label="Mín"><span class="num muted">20</span></td>
+                <td data-label="Máx"><span class="num muted">500</span></td>
+                <td data-label="Costo"><span class="num">0.8</span> <span class="code">CUP</span></td>
+                <td data-label="Precio"><span class="num">1.5</span> <span class="code">CUP</span></td>
+                <td data-label="Valor stock"><span class="num">99.2</span> <span class="code">CUP</span></td>
+                <td data-label="Margen"><span class="badge-success">87%</span></td>
+              </tr>
+              <tr>
+                <td class="td-product" data-label="Producto">
+                  <div class="prod-cell">
+                    <span class="prod-avatar">📦</span>
+                    <div>
+                      <strong>Pan de molde</strong>
+                      <small>Panadería · Unidad</small>
+                    </div>
+                  </div>
+                </td>
+                <td data-label="Stock"><span class="num warn-text">8</span></td>
+                <td data-label="Reserv."><span class="num muted">0</span></td>
+                <td data-label="Mín"><span class="num muted">10</span></td>
+                <td data-label="Máx"><span class="num muted">100</span></td>
+                <td data-label="Costo"><span class="num">2.5</span> <span class="code">CUP</span></td>
+                <td data-label="Precio"><span class="num">3.2</span> <span class="code">CUP</span></td>
+                <td data-label="Valor stock"><span class="num">20</span> <span class="code">CUP</span></td>
+                <td data-label="Margen"><span class="badge-success">28%</span></td>
+              </tr>
+              <tr>
+                <td class="td-product" data-label="Producto">
+                  <div class="prod-cell">
+                    <span class="prod-avatar">📦</span>
+                    <div>
+                      <strong>Café molido 250g</strong>
+                      <small>Café · Unidad</small>
+                    </div>
+                  </div>
+                </td>
+                <td data-label="Stock"><span class="num">18</span></td>
+                <td data-label="Reserv."><span class="num muted">0</span></td>
+                <td data-label="Mín"><span class="num muted">5</span></td>
+                <td data-label="Máx"><span class="num muted">50</span></td>
+                <td data-label="Costo"><span class="num">3.8</span> <span class="code">CUP</span></td>
+                <td data-label="Precio"><span class="num">4.8</span> <span class="code">CUP</span></td>
+                <td data-label="Valor stock"><span class="num">68.4</span> <span class="code">CUP</span></td>
+                <td data-label="Margen"><span class="badge-success">26%</span></td>
+              </tr>
+              <tr>
+                <td class="td-product" data-label="Producto">
+                  <div class="prod-cell">
+                    <span class="prod-avatar">📦</span>
+                    <div>
+                      <strong>Cuaderno A4</strong>
+                      <small>Útiles · Unidad</small>
+                    </div>
+                  </div>
+                </td>
+                <td data-label="Stock"><span class="num">42</span></td>
+                <td data-label="Reserv."><span class="num muted">0</span></td>
+                <td data-label="Mín"><span class="num muted">10</span></td>
+                <td data-label="Máx"><span class="num muted">200</span></td>
+                <td data-label="Costo"><span class="num">1.4</span> <span class="code">CUP</span></td>
+                <td data-label="Precio"><span class="num">2.1</span> <span class="code">CUP</span></td>
+                <td data-label="Valor stock"><span class="num">58.8</span> <span class="code">CUP</span></td>
+                <td data-label="Margen"><span class="badge-success">50%</span></td>
+              </tr>
+              <tr>
+                <td class="td-product" data-label="Producto">
+                  <div class="prod-cell">
+                    <span class="prod-avatar">📦</span>
+                    <div>
+                      <strong>Bolígrafo azul</strong>
+                      <small>Útiles · Unidad</small>
+                    </div>
+                  </div>
+                </td>
+                <td data-label="Stock"><span class="num">186</span></td>
+                <td data-label="Reserv."><span class="num muted">0</span></td>
+                <td data-label="Mín"><span class="num muted">50</span></td>
+                <td data-label="Máx"><span class="num muted">1000</span></td>
+                <td data-label="Costo"><span class="num">0.3</span> <span class="code">CUP</span></td>
+                <td data-label="Precio"><span class="num">0.5</span> <span class="code">CUP</span></td>
+                <td data-label="Valor stock"><span class="num">55.8</span> <span class="code">CUP</span></td>
+                <td data-label="Margen"><span class="badge-success">67%</span></td>
+              </tr>
+            </tbody>
+          </table>
+          <button class="inv-fab" aria-label="Nuevo producto">+</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Band: Equipo (EmployeesView) -->
+  <section class="band band-light" id="equipo">
+    <div class="band-inner">
+      <p class="band-eyebrow">Equipo</p>
+      <h2 class="band-title">Tu gente,<br />cada quien con su rol.</h2>
+      <p class="band-sub">Cargá empleados, asignales un puesto y un rol. Dueño, administrador, vendedor y cajero — cada uno entra y ve solo lo que le toca.</p>
+      <a class="link link-primary" href="https://wa.me/5354172257?text=Hola%2C%20quiero%20saber%20m%C3%A1s%20sobre%20Neto%20POS" target="_blank" rel="noopener">Ver más <span class="chev">›</span></a>
+
+      <div class="band-visual" aria-hidden="true">
+        <div class="emp-app">
+          <div class="emp-toolbar">
+            <div class="emp-search">⌕  Buscar empleado…</div>
+            <div class="emp-sorts">
+              <span class="sort active">Alfabético</span>
+              <span class="sort">Ascendente</span>
+              <span class="sort">Descendente</span>
+            </div>
+          </div>
+          <div class="emp-list">
+            <div class="emp-item">
+              <span class="emp-avatar" style="--c:#10B981">A</span>
+              <div class="emp-info">
+                <strong>Ana Morales</strong>
+                <small><span class="role-tag owner">Propietario</span> · Propietario · amorales</small>
+              </div>
+              <button class="emp-edit" aria-label="Editar">✎</button>
+            </div>
+            <div class="emp-item">
+              <span class="emp-avatar" style="--c:#3B82F6">B</span>
+              <div class="emp-info">
+                <strong>Brenda Pérez</strong>
+                <small><span class="role-tag admin">Administrador</span> · Administrador · bperez</small>
+              </div>
+              <button class="emp-edit" aria-label="Editar">✎</button>
+            </div>
+            <div class="emp-item">
+              <span class="emp-avatar" style="--c:#7C5CFF">C</span>
+              <div class="emp-info">
+                <strong>Carlos Méndez</strong>
+                <small><span class="role-tag seller">Vendedor</span> · Vendedor · cmendez</small>
+              </div>
+              <button class="emp-edit" aria-label="Editar">✎</button>
+            </div>
+            <div class="emp-item">
+              <span class="emp-avatar" style="--c:#F59E0B">D</span>
+              <div class="emp-info">
+                <strong>Daniel López</strong>
+                <small><span class="role-tag cashier">Cajero</span> · Cajero senior · dlopez</small>
+              </div>
+              <button class="emp-edit" aria-label="Editar">✎</button>
+            </div>
+            <div class="emp-item">
+              <span class="emp-avatar" style="--c:#EC4899">E</span>
+              <div class="emp-info">
+                <strong>Elena Suárez</strong>
+                <small><span class="role-tag cashier">Cajero</span> · Cajero · esuarez</small>
+              </div>
+              <button class="emp-edit" aria-label="Editar">✎</button>
+            </div>
+          </div>
+          <button class="emp-fab" aria-label="Nuevo empleado">+</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Band: Plataformas -->
+  <section class="band band-light band-split" id="plataformas">
+    <div class="split">
+      <div class="split-col">
+        <p class="band-eyebrow">Windows</p>
+        <h3 class="split-title">Una app nativa<br />en tu computadora.</h3>
+        <p class="band-sub">Instalás, iniciás y a vender. Diseñada para ser rápida incluso en máquinas modestas, con base de datos local para que no dependas de internet.</p>
+        <div class="split-actions">
+          <a class="link link-primary" href="https://wa.me/5354172257?text=Hola%2C%20me%20interesa%20Neto%20para%20Windows" target="_blank" rel="noopener">Comprar para Windows <span class="chev">›</span></a>
+          <a class="btn-download" href="#" download>
+            <svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path fill="currentColor" d="M8 1a.5.5 0 0 1 .5.5v6.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 8.293V1.5A.5.5 0 0 1 8 1Zm-6.5 11a.5.5 0 0 1 .5.5v1A.5.5 0 0 0 2.5 14h11a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 1 1 0v1A1.5 1.5 0 0 1 13.5 15h-11A1.5 1.5 0 0 1 1 13.5v-1a.5.5 0 0 1 .5-.5Z"/></svg>
+            Descargar para Windows
+          </a>
+        </div>
+      </div>
+      <div class="split-col split-col-right">
+        <div class="phone-mock" aria-hidden="true">
+          <div class="phone-notch"></div>
+          <div class="phone-screen">
+            <div class="ph-status">
+              <span>9:41</span>
+              <span>●●● ▮</span>
+            </div>
+            <div class="ph-app">
+              <div class="ph-head">
+                <span class="ph-logo">neto</span>
+                <span class="ph-menu">≡</span>
+              </div>
+              <h4 class="ph-title">Inicia sesión para activar</h4>
+              <p class="ph-help">Necesitamos tu cuenta para generar la licencia de este dispositivo.</p>
+              <div class="ph-field"><label>Usuario</label><div class="ph-input">amorales</div></div>
+              <div class="ph-field"><label>Contraseña</label><div class="ph-input">••••••••</div></div>
+              <button class="ph-btn">Entrar</button>
+              <a class="ph-link">Probar gratis</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="split split-reverse">
+      <div class="split-col">
+        <p class="band-eyebrow">Android</p>
+        <h3 class="split-title">Y otra<br />en tu bolsillo.</h3>
+        <p class="band-sub">Consultá ventas, registrá órdenes o mirá el cierre de caja desde el celular. Funciona con la misma base de datos local de tu PC.</p>
+        <div class="split-actions">
+          <a class="link link-primary" href="https://wa.me/5354172257?text=Hola%2C%20me%20interesa%20Neto%20para%20Android" target="_blank" rel="noopener">Comprar para Android <span class="chev">›</span></a>
+          <a class="btn-download" href="#" download>
+            <svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path fill="currentColor" d="M8 1a.5.5 0 0 1 .5.5v6.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 8.293V1.5A.5.5 0 0 1 8 1Zm-6.5 11a.5.5 0 0 1 .5.5v1A.5.5 0 0 0 2.5 14h11a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 1 1 0v1A1.5 1.5 0 0 1 13.5 15h-11A1.5 1.5 0 0 1 1 13.5v-1a.5.5 0 0 1 .5-.5Z"/></svg>
+            Descargar para Android
+          </a>
+        </div>
+      </div>
+      <div class="split-col split-col-right">
+        <div class="phone-mock phone-mock-2" aria-hidden="true">
+          <div class="phone-notch"></div>
+          <div class="phone-screen">
+            <div class="ph-status">
+              <span>9:41</span>
+              <span>●●● ▮</span>
+            </div>
+            <div class="ph-app">
+              <div class="ph-head">
+                <span class="ph-logo">neto</span>
+                <span class="ph-tabs">
+                  <span class="ph-tab active">Inicio</span>
+                  <span class="ph-tab">Historial</span>
+                  <span class="ph-tab">Resumen</span>
+                </span>
+              </div>
+              <div class="ph-card-mob">
+                <span class="ph-card-l">Ventas hoy</span>
+                <span class="ph-card-v"><span class="num">248</span> <span class="code">CUP</span></span>
+                <span class="ph-card-d">42 órdenes</span>
+              </div>
+              <div class="ph-list-mob">
+                <div class="ph-li"><span>Orden #1042</span><span><span class="num">12.5</span> <span class="code">CUP</span></span></div>
+                <div class="ph-li"><span>Orden #1041</span><span><span class="num">28</span> <span class="code">CUP</span></span></div>
+                <div class="ph-li"><span>Orden #1040</span><span><span class="num">45</span> <span class="code">CUP</span></span></div>
+              </div>
+              <button class="ph-fab">+</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section class="pricing" id="precio">
+    <div class="pricing-inner">
+      <p class="band-eyebrow">Precio</p>
+      <h2 class="band-title">Una sola compra.<br />Para siempre.</h2>
+      <p class="band-sub pricing-sub">Pagás una vez, te pertenece. Sin mensualidades, sin sorpresas, sin letra chica.</p>
+
+      <div class="price-card">
+        <span class="pc-trial">Prueba gratuita · 1 mes</span>
+        <p class="pc-name">Neto POS</p>
+        <p class="pc-desc">Todo lo que necesitás para vender. Windows y Android.</p>
+        <div class="pc-price">
+          <span class="pc-from">Desde</span>
+          <span class="pc-amount">$100</span>
+          <span class="pc-period">USD</span>
+        </div>
+        <ul class="pc-list">
+          <li><strong>1 mes de prueba gratis</strong>, sin tarjeta ni compromiso</li>
+          <li>Aplicación para Windows</li>
+          <li>Aplicación para Android</li>
+          <li>Inventario, ventas y reportes ilimitados</li>
+          <li>Licencia Ed25519 firmada de por vida</li>
+          <li>Soporte directo por WhatsApp</li>
+        </ul>
+        <a class="btn btn-dark btn-block" href="https://wa.me/5354172257?text=Hola%2C%20quiero%20probar%20Neto%20POS%20gratis%20por%201%20mes" target="_blank" rel="noopener">Empezar mi mes gratis</a>
+        <p class="pc-foot">Activación en menos de 24 h.<br />Después del mes de prueba, pagás solo si querés continuar. Por transferencia o método a convenir.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA final -->
+  <section class="cta-final">
+    <h2 class="cta-title">Pensado para que<br />vendas más.</h2>
+    <p class="cta-sub">Escribime y lo dejamos listo hoy.</p>
+    <a class="link link-primary-on-dark" href="https://wa.me/5354172257?text=Hola%2C%20me%20interesa%20Neto%20POS" target="_blank" rel="noopener">Hablar por WhatsApp <span class="chev">›</span></a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-cols">
+        <div class="footer-col">
+          <p class="footer-h">Comprar</p>
+          <a href="#precio">Neto POS</a>
+          <a href="https://wa.me/5354172257" target="_blank" rel="noopener">Por WhatsApp</a>
+        </div>
+        <div class="footer-col">
+          <p class="footer-h">Producto</p>
+          <a href="#ventas">Punto de venta</a>
+          <a href="#inventario">Inventario</a>
+          <a href="#equipo">Empleados y roles</a>
+          <a href="#plataformas">Plataformas</a>
+        </div>
+        <div class="footer-col">
+          <p class="footer-h">Contacto</p>
+          <a href="https://wa.me/5354172257" target="_blank" rel="noopener">WhatsApp</a>
+          <a href="https://wa.me/5354172257" target="_blank" rel="noopener">+53 54172257</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>Copyright © 2026 Neto POS.</span>
+        <span>Hecho para tu negocio.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp flotante -->
+  <a class="wa-fab" href="https://wa.me/5354172257?text=Hola%2C%20me%20interesa%20Neto%20POS" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+    <svg viewBox="0 0 32 32" width="26" height="26" aria-hidden="true">
+      <path fill="currentColor" d="M16 3C9 3 3.5 8.5 3.5 15.5c0 2.4.7 4.7 1.9 6.7L3 29l7-1.8c1.9 1 4 1.6 6.1 1.6h.1c6.9 0 12.5-5.6 12.5-12.5S23 3 16 3Zm7.1 17.6c-.3.8-1.7 1.6-2.4 1.7-.6.1-1.4.1-2.2-.1-.5-.2-1.2-.4-2.1-.8-3.7-1.6-6.1-5.3-6.3-5.6-.2-.3-1.5-2-1.5-3.7s.9-2.7 1.3-3.1c.3-.3.7-.4 1-.4h.7c.2 0 .6-.1.9.7l1.2 2.9c.1.3.2.6 0 .9-.1.2-.3.4-.4.6l-.5.6c-.2.2-.3.4-.1.7l.3.4c.6.9 1.3 1.7 2.2 2.4.9.7 1.9 1.1 2.7 1.4.3.1.5.1.7-.1l.9-1c.2-.3.5-.2.8-.1l2.6 1.2c.3.1.5.3.4.6-.1.4-.2.7-.3.8Z"/>
+    </svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
